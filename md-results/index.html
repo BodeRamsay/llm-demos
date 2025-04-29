@@ -1,1 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maryland Election Results</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Maryland Election Results</h1>
 
+        <section id="statewide">
+            <h2>Statewide Totals</h2>
+            <table id="statewide-table">
+                <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Total Votes</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filled by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="county">
+            <h2>County Results</h2>
+            <label for="county-select">Select a County:</label>
+            <select id="county-select">
+                <!-- Filled by JavaScript -->
+            </select>
+
+            <table id="county-table">
+                <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Votes</th>
+                        <th>Percentage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Filled by JavaScript -->
+                </tbody>
+            </table>
+
+            <canvas id="county-chart" style="margin-top: 30px; max-height: 400px;"></canvas>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
